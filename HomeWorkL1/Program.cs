@@ -83,10 +83,36 @@ namespace HomeWorkL1
 
         }
 
+        static void Task5()
+        {
+            double x1;
+            double x2;
+            double y1;
+            double y2;
+
+            Console.WriteLine("Enter first point X1,Y1: ");
+            Console.Write("Enter number for X1: ");
+            x1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter number for Y1: ");
+            y1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter second point X2,Y2: ");
+            Console.Write("Enter number for X2: ");
+            x2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter number for Y2: ");
+            y2 = Convert.ToDouble(Console.ReadLine());
+
+            double x = (y1 - y2) / (x1 - x2);
+            double y = y2 - x * x2;
+
+            Console.Write($"Result x= {x}, y= {y}");
+
+        }
+
         static void Main(string[] args)
         {
 
-            Task4();
+            Task5();
 
         }
     }
