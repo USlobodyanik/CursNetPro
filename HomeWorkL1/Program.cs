@@ -62,10 +62,31 @@ namespace HomeWorkL1
 
         }
 
+        static void Task4()
+        {
+            double a;
+            double b;
+            double c;
+
+            Console.Write("Enter numder A: ");
+            a = Convert.ToDouble(Console.ReadLine());
+            
+            Console.Write("Enter numder B: ");
+            b = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter numder C: ");
+            c = Convert.ToDouble(Console.ReadLine());
+
+            double result = c / a - b / a;
+            
+            Console.WriteLine($"Result for A*X+B=C {Environment.NewLine}{result}");
+
+        }
+
         static void Main(string[] args)
         {
 
-            Task3();
+            Task4();
 
         }
     }
