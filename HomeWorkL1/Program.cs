@@ -22,6 +22,7 @@ namespace HomeWorkL1
             Console.WriteLine($"Result for task1:{Environment.NewLine}{result}");
 
         }
+
         static void Task2()
         {
             string a;
@@ -40,10 +41,31 @@ namespace HomeWorkL1
             Console.WriteLine($"Result String 1: " + a + " String 2: " + b);
 
         }
+
+        static void Task3()
+        {
+            double a;
+            double b;
+            int mod;
+
+            Console.Write("Enter numder A: ");
+            a = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter numder B: ");
+            b = Convert.ToDouble(Console.ReadLine());
+
+            double result = a / b;
+            mod = (int)(a % b);
+
+            Console.WriteLine($"Result division A/B {result}");
+            Console.WriteLine($"Remainder of division A/B {mod}");
+
+        }
+
         static void Main(string[] args)
         {
 
-            Task2();
+            Task3();
 
         }
     }
