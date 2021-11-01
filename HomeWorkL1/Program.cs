@@ -4,7 +4,6 @@ namespace HomeWorkL1
 {
     class Program
     {
-
         static void Task1()
         {
             double a;
@@ -23,10 +22,28 @@ namespace HomeWorkL1
             Console.WriteLine($"Result for task1:{Environment.NewLine}{result}");
 
         }
+        static void Task2()
+        {
+            string a;
+            string b;
+
+            Console.WriteLine("Enter string 1: ");
+            a = Console.ReadLine();
+            string temp = a;
+
+            Console.WriteLine("Enter string 2: ");
+            b = Console.ReadLine();
+            
+            a = b;
+            b = temp;
+
+            Console.WriteLine($"Result String 1: " + a + " String 2: " + b);
+
+        }
         static void Main(string[] args)
         {
-            Task1();
-            Console.ReadKey();
+
+            Task2();
 
         }
     }
