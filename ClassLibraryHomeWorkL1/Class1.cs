@@ -38,10 +38,7 @@ namespace ClassLibraryHomeWorkL1
         public static(double x, double y) Task5(double x1, double x2, double y1, double y2)
         {
 
-            double x = (y1 - y2) / (x1 - x2);
-            double y = y2 - x * x2;
-
-            return (x, y);
+            return ((y1 - y2) / (x1 - x2), y2 - ((y1 - y2) / (x1 - x2)) * x2);
 
         }
 
