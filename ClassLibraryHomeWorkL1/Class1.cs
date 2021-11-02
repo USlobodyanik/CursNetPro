@@ -5,10 +5,10 @@ namespace ClassLibraryHomeWorkL1
     public class MyTestLibrary
     {
 
-        static double Task1(double a, double b)
+        public static double Task1(double a, double b)
         {
 
-            return (5 * a + b * b) / (b - a);
+            return (5.0 * a + b * b) / (b - a);
 
         }
 
@@ -21,7 +21,7 @@ namespace ClassLibraryHomeWorkL1
 
         }
 
-        static void Task3(double a, double b)
+        public static void Task3(double a, double b)
         {
 
             int mod;
@@ -31,14 +31,14 @@ namespace ClassLibraryHomeWorkL1
 
         }
 
-        static double Task4(double a, double b, double c)
+        public static double Task4(double a, double b, double c)
         {
 
             return (c / a - b / a);
 
         }
 
-        static (double x, double y) Task5(double x1, double x2, double y1, double y2)
+        public static(double x, double y) Task5(double x1, double x2, double y1, double y2)
         {
 
             double x = (y1 - y2) / (x1 - x2);

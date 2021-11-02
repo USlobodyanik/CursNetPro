@@ -7,12 +7,11 @@ namespace ConsoleForTestLib
     {
         static void Main(string[] args)
         {
-            string a = "String1";
-            string b = "String2";
 
-            MyTestLibrary.Task2(ref a, ref b);
+            Console.WriteLine("Task1 work with lib: ");
+            double result = MyTestLibrary.Task1(4.5, 7);
 
-            Console.WriteLine(a + b);
+            Console.WriteLine(result);
 
         }
     }
