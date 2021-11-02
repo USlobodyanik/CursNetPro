@@ -16,7 +16,11 @@ namespace ConsoleForTestLib
             string b = "String2";
             Console.WriteLine($"Input str: {a} {b}");
             MyTestLibrary.Task2(ref a, ref b);
-            Console.WriteLine($"Replaced str: {a} {b}");
+            Console.WriteLine($"Replaced str: {a} {b}{Environment.NewLine}");
+
+            Console.WriteLine("Task3 work with lib: ");
+            (double result, int mod) = MyTestLibrary.Task3(5.9, 4);
+            Console.WriteLine($"Division Result :{result}{Environment.NewLine}Remainder of division: {mod}{Environment.NewLine}");
 
         }
     }

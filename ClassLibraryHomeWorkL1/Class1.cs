@@ -21,13 +21,10 @@ namespace ClassLibraryHomeWorkL1
 
         }
 
-        public static void Task3(double a, double b)
+        public static (double result, int mod) Task3(double a, double b)
         {
 
-            int mod;
-
-            double result = a / b;
-            mod = (int)(a % b);
+            return (a / b, Convert.ToInt32(a % b));
 
         }
 
