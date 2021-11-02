@@ -9,9 +9,8 @@ namespace ConsoleForTestLib
         {
 
             Console.WriteLine("Task1 work with lib: ");
-            double result = MyTestLibrary.Task1(4.5, 7);
 
-            Console.WriteLine(result);
+            Console.WriteLine(MyTestLibrary.Task1(4.5, 7));
 
         }
     }
