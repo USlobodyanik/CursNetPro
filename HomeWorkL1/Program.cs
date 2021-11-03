@@ -12,7 +12,6 @@ namespace HomeWorkL1
             Console.Write("Enter numder A: ");
             string input = Console.ReadLine();
             a = Convert.ToDouble(input);
-
             Console.Write("Enter numder B: ");
             input = Console.ReadLine();
             b = Convert.ToDouble(input);
@@ -20,9 +19,7 @@ namespace HomeWorkL1
             double result = (5 * a + b * b) / (b - a);
 
             Console.WriteLine($"Result for task1:{Environment.NewLine}{result}");
-
         }
-
         static void Task2()
         {
             string a;
@@ -31,7 +28,6 @@ namespace HomeWorkL1
             Console.WriteLine("Enter string 1: ");
             a = Console.ReadLine();
             string temp = a;
-
             Console.WriteLine("Enter string 2: ");
             b = Console.ReadLine();
             
@@ -39,9 +35,7 @@ namespace HomeWorkL1
             b = temp;
 
             Console.WriteLine($"Result String 1: " + a + " String 2: " + b);
-
         }
-
         static void Task3()
         {
             double a;
@@ -50,7 +44,6 @@ namespace HomeWorkL1
 
             Console.Write("Enter numder A: ");
             a = Convert.ToDouble(Console.ReadLine());
-
             Console.Write("Enter numder B: ");
             b = Convert.ToDouble(Console.ReadLine());
 
@@ -59,9 +52,7 @@ namespace HomeWorkL1
 
             Console.WriteLine($"Result division A/B {result}");
             Console.WriteLine($"Remainder of division A/B {mod}");
-
         }
-
         static void Task4()
         {
             double a;
@@ -70,19 +61,15 @@ namespace HomeWorkL1
 
             Console.Write("Enter numder A: ");
             a = Convert.ToDouble(Console.ReadLine());
-            
             Console.Write("Enter numder B: ");
             b = Convert.ToDouble(Console.ReadLine());
-
             Console.Write("Enter numder C: ");
             c = Convert.ToDouble(Console.ReadLine());
 
             double result = c / a - b / a;
-            
+
             Console.WriteLine($"Result for A*X+B=C {Environment.NewLine}{result}");
-
         }
-
         static void Task5()
         {
             double x1;
@@ -95,7 +82,6 @@ namespace HomeWorkL1
             x1 = Convert.ToDouble(Console.ReadLine());
             Console.Write("Enter number for Y1: ");
             y1 = Convert.ToDouble(Console.ReadLine());
-
             Console.WriteLine("Enter second point X2,Y2: ");
             Console.Write("Enter number for X2: ");
             x2 = Convert.ToDouble(Console.ReadLine());
@@ -106,14 +92,10 @@ namespace HomeWorkL1
             double y = y2 - x * x2;
 
             Console.Write($"Result x= {x}, y= {y}");
-
         }
-
         static void Main(string[] args)
         {
-
             Task5();
-
         }
     }
 }
